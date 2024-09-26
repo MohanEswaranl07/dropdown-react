@@ -1,0 +1,12 @@
+Project Running Steps :
+
+1.Go to the react folder 'popupform'
+
+2.Run the react project 'localhost:3000'
+
+3.Next Run the your json server, using below commend
+'npx json-server --watch segmentData.json --port 5118'
+
+4.Now check your reatc project.
+
+end
