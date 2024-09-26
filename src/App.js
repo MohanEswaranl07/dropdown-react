@@ -26,8 +26,7 @@ export default function App() {
   } else {
     document.body.classList.remove('active-modal')
   }
-
-
+  
   // Handle adding new schema
   const addNewSchema = () => {
     if (currentSchema !== '') {
