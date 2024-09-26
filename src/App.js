@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Axios from 'axios'
 import "./popup.css";
 
 export default function App() {
@@ -26,7 +27,7 @@ export default function App() {
   } else {
     document.body.classList.remove('active-modal')
   }
-  
+
   // Handle adding new schema
   const addNewSchema = () => {
     if (currentSchema !== '') {
@@ -61,6 +62,8 @@ export default function App() {
         [schema.value]: schema.label
       }))
     };
+
+    Axios.post('  http://localhost:5118/segments',arraySegment);
     console.log(arraySegment);
 
     togglePopup();
